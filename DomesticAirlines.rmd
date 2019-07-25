@@ -3,19 +3,19 @@ title: "domestic_airlines.rmd"
 author: "hannahborle"
 # date: "25/07/2019"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
-output:
-  html_document:
-    toc: true
-    toc_depth: 3
-    number_sections: yes
-    df_print: paged
-    toc_float: true
-    toc_collapsed: true
-    code_folding: "hide"
-    theme: spacelab
-    highlight: pygments
+# output:
+#   html_document:
+#     toc: true
+#     toc_depth: 3
+#     number_sections: yes
+#     df_print: paged
+#     toc_float: true
+#     toc_collapsed: true
+#     code_folding: "hide"
+#     theme: spacelab
+#     highlight: pygments
 
- 
+output: ioslides_presentation
 ---
 
 ## Introduction
