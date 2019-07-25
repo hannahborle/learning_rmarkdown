@@ -1,9 +1,26 @@
 ---
 title: "domestic_airlines.rmd"
 author: "hannahborle"
-date: "25/07/2019"
-output: html_document
+# date: "25/07/2019"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    number_sections: yes
+    df_print: paged
+    toc_float: true
+    toc_collapsed: true
+    code_folding: "hide"
+    theme: spacelab
+    highlight: pygments
+
+ 
 ---
+
+## Introduction
+
+Here is some data I am trialling Rmarkdown with
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,
@@ -15,6 +32,9 @@ knitr::opts_chunk$set(echo = TRUE,
 ```{r}
 library(tidyverse)
 ```
+
+
+## Downloading the data 
 
 ```{r}
 fn_data <- "domestic_airline_performance.csv"
@@ -38,7 +58,8 @@ d <- df %>% dim
 
 Number of rows i.e. observations `r d[1]` and number of columns i.e. variables `r d[2]`
 
-## Description of data
+not including data here
+
 
 <!--
 
@@ -62,3 +83,4 @@ df2 %>%
     geom_boxplot() +
     theme(axis.text.x=element_text(angle=45, hjust=1))
 ```
+
